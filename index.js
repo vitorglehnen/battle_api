@@ -30,7 +30,7 @@ const basicAuthMiddleware = (req, res, next) => {
   const [user, pass] = decodedCredentials.split(':');
 
   // Nossas credenciais corretas
-  const expectedUser = 'admin';
+  const expectedUser = 'adminho';
   const expectedPass = 'adminho';
 
   // Verifica se bate
