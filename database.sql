@@ -1,7 +1,5 @@
--- Remove a tabela se ela já existir, para começar do zero
 DROP TABLE IF EXISTS posts;
 
--- Cria a tabela nova
     CREATE TABLE posts (
         id SERIAL PRIMARY KEY,
         quem VARCHAR(255) NOT NULL,
