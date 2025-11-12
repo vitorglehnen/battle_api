@@ -14,7 +14,7 @@ const CACHE_TIME_SLOW_MS = 30 * 1000; // 30 segundos para a query LENTA (GET /po
 // Permite 100 requisições por IP a cada 1 minuto
 const limiter = rateLimit({
 	windowMs: 1 * 60 * 1000, // 1 minuto
-	max: 100, // Limite de 100 reqs por IP por janela
+	max: 60000, // Limite de 100 reqs por IP por janela
 	message: 'Muitas requisições deste IP. Tente novamente em 1 minuto.',
   standardHeaders: true,
   legacyHeaders: false,
